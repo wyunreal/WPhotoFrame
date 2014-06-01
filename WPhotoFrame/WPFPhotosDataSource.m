@@ -30,22 +30,24 @@
 -(void) thumbnailWithUrl: (NSURL*) url successBlock: (void (^)(CGImageRef))successBlock;
 {
     ALAssetsLibrary *al = [[ALAssetsLibrary alloc] init];
-    [al assetForURL:url resultBlock:^(ALAsset *asset)
-     {
-         if (asset) {
-             successBlock(CGImageCreateCopy([asset thumbnail]));
-         }
-     }
+    [al assetForURL:url
+        resultBlock:^(ALAsset *asset)
+                    {
+                        if (asset) {
+                            successBlock([asset thumbnail]);
+                        }
+                    }
        failureBlock:^(NSError *error) {}];
 }
 
 -(void) fullResolutionPhotoWithUrl: (NSURL*) url successBlock: (void (^)(CGImageRef))successBlock;
 {
     ALAssetsLibrary *al = [[ALAssetsLibrary alloc] init];
-    [al assetForURL:url resultBlock:^(ALAsset *asset)
+    [al assetForURL:url
+        resultBlock:^(ALAsset *asset)
                     {
                         if (asset) {
-                            successBlock(CGImageCreateCopy([[asset defaultRepresentation] fullResolutionImage]));
+                            successBlock([[asset defaultRepresentation] fullResolutionImage]);
                         }
                     }
        failureBlock:^(NSError *error) {}];

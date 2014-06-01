@@ -80,7 +80,8 @@
     [self.dataSource fullResolutionPhotoWithUrl:url
                                    successBlock:^(CGImageRef image)
                                                 {
-                                                    self.nextImage = image;
+                                                    CGImageRelease(self.nextImage);
+                                                    self.nextImage = CGImageCreateCopy(image);
                                                     self.currentPhotoIndex = (self.currentPhotoIndex+1) % self.allPhotoUrls.count;
                                                 }];
 }
