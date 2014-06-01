@@ -13,14 +13,15 @@
 		6D6984891939019D00DCAB16 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6D6984871939019D00DCAB16 /* InfoPlist.strings */; };
 		6D69848B1939019D00DCAB16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D69848A1939019D00DCAB16 /* main.m */; };
 		6D69848F1939019D00DCAB16 /* WPFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D69848E1939019D00DCAB16 /* WPFAppDelegate.m */; };
-		6D6984921939019D00DCAB16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D6984901939019D00DCAB16 /* Main.storyboard */; };
-		6D6984951939019D00DCAB16 /* WPFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6984941939019D00DCAB16 /* WPFViewController.m */; };
+		6D6984951939019D00DCAB16 /* WPFCurrentPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6984941939019D00DCAB16 /* WPFCurrentPhotoViewController.m */; };
 		6D6984971939019D00DCAB16 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D6984961939019D00DCAB16 /* Images.xcassets */; };
 		6D69849E1939019D00DCAB16 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D69849D1939019D00DCAB16 /* XCTest.framework */; };
 		6D69849F1939019D00DCAB16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D69847E1939019D00DCAB16 /* Foundation.framework */; };
 		6D6984A01939019D00DCAB16 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D6984821939019D00DCAB16 /* UIKit.framework */; };
 		6D6984A81939019D00DCAB16 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6D6984A61939019D00DCAB16 /* InfoPlist.strings */; };
 		6D6984AA1939019D00DCAB16 /* WPhotoFrameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6984A91939019D00DCAB16 /* WPhotoFrameTests.m */; };
+		6D6984B4193A1F0B00DCAB16 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D6984B3193A1F0B00DCAB16 /* AssetsLibrary.framework */; };
+		6D6984BA193B769400DCAB16 /* WPFPhotosDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6984B9193B769400DCAB16 /* WPFPhotosDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,15 +45,17 @@
 		6D69848C1939019D00DCAB16 /* WPhotoFrame-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WPhotoFrame-Prefix.pch"; sourceTree = "<group>"; };
 		6D69848D1939019D00DCAB16 /* WPFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPFAppDelegate.h; sourceTree = "<group>"; };
 		6D69848E1939019D00DCAB16 /* WPFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPFAppDelegate.m; sourceTree = "<group>"; };
-		6D6984911939019D00DCAB16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6D6984931939019D00DCAB16 /* WPFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPFViewController.h; sourceTree = "<group>"; };
-		6D6984941939019D00DCAB16 /* WPFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPFViewController.m; sourceTree = "<group>"; };
+		6D6984931939019D00DCAB16 /* WPFCurrentPhotoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPFCurrentPhotoViewController.h; sourceTree = "<group>"; };
+		6D6984941939019D00DCAB16 /* WPFCurrentPhotoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPFCurrentPhotoViewController.m; sourceTree = "<group>"; };
 		6D6984961939019D00DCAB16 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6D69849C1939019D00DCAB16 /* WPhotoFrameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WPhotoFrameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D69849D1939019D00DCAB16 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6D6984A51939019D00DCAB16 /* WPhotoFrameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WPhotoFrameTests-Info.plist"; sourceTree = "<group>"; };
 		6D6984A71939019D00DCAB16 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6D6984A91939019D00DCAB16 /* WPhotoFrameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPhotoFrameTests.m; sourceTree = "<group>"; };
+		6D6984B3193A1F0B00DCAB16 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		6D6984B8193B769400DCAB16 /* WPFPhotosDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPFPhotosDataSource.h; sourceTree = "<group>"; };
+		6D6984B9193B769400DCAB16 /* WPFPhotosDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPFPhotosDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D6984B4193A1F0B00DCAB16 /* AssetsLibrary.framework in Frameworks */,
 				6D6984811939019D00DCAB16 /* CoreGraphics.framework in Frameworks */,
 				6D6984831939019D00DCAB16 /* UIKit.framework in Frameworks */,
 				6D69847F1939019D00DCAB16 /* Foundation.framework in Frameworks */,
@@ -101,6 +105,7 @@
 		6D69847D1939019D00DCAB16 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6D6984B3193A1F0B00DCAB16 /* AssetsLibrary.framework */,
 				6D69847E1939019D00DCAB16 /* Foundation.framework */,
 				6D6984801939019D00DCAB16 /* CoreGraphics.framework */,
 				6D6984821939019D00DCAB16 /* UIKit.framework */,
@@ -114,9 +119,10 @@
 			children = (
 				6D69848D1939019D00DCAB16 /* WPFAppDelegate.h */,
 				6D69848E1939019D00DCAB16 /* WPFAppDelegate.m */,
-				6D6984901939019D00DCAB16 /* Main.storyboard */,
-				6D6984931939019D00DCAB16 /* WPFViewController.h */,
-				6D6984941939019D00DCAB16 /* WPFViewController.m */,
+				6D6984B8193B769400DCAB16 /* WPFPhotosDataSource.h */,
+				6D6984B9193B769400DCAB16 /* WPFPhotosDataSource.m */,
+				6D6984931939019D00DCAB16 /* WPFCurrentPhotoViewController.h */,
+				6D6984941939019D00DCAB16 /* WPFCurrentPhotoViewController.m */,
 				6D6984961939019D00DCAB16 /* Images.xcassets */,
 				6D6984851939019D00DCAB16 /* Supporting Files */,
 			);
@@ -231,7 +237,6 @@
 			files = (
 				6D6984971939019D00DCAB16 /* Images.xcassets in Resources */,
 				6D6984891939019D00DCAB16 /* InfoPlist.strings in Resources */,
-				6D6984921939019D00DCAB16 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,7 +255,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D6984951939019D00DCAB16 /* WPFViewController.m in Sources */,
+				6D6984951939019D00DCAB16 /* WPFCurrentPhotoViewController.m in Sources */,
+				6D6984BA193B769400DCAB16 /* WPFPhotosDataSource.m in Sources */,
 				6D69848F1939019D00DCAB16 /* WPFAppDelegate.m in Sources */,
 				6D69848B1939019D00DCAB16 /* main.m in Sources */,
 			);
@@ -281,14 +287,6 @@
 				6D6984881939019D00DCAB16 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		6D6984901939019D00DCAB16 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6D6984911939019D00DCAB16 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		6D6984A61939019D00DCAB16 /* InfoPlist.strings */ = {
@@ -382,7 +380,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WPhotoFrame/WPhotoFrame-Prefix.pch";
 				INFOPLIST_FILE = "WPhotoFrame/WPhotoFrame-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -395,7 +395,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WPhotoFrame/WPhotoFrame-Prefix.pch";
 				INFOPLIST_FILE = "WPhotoFrame/WPhotoFrame-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WPFCurrentPhotoViewController.h"
 
 @interface WPFAppDelegate : UIResponder <UIApplicationDelegate>
 

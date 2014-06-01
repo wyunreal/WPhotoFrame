@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WPFPhotosDataSource.h"
 
-@interface WPFViewController : UIViewController
+@interface WPFCurrentPhotoViewController : UIViewController
+
+@property (strong, nonatomic) WPFPhotosDataSource *dataSource;
 
 @end
